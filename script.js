@@ -437,19 +437,53 @@ function giants() {
     return arr[Math.floor(Math.random()*arr.length)];
 }
 
-let roll = randomItem(arrChooser(magicTables));
-
-console.log('You found a ' + randomItem(arrChooser(magicTables)));
-console.log(randItemN(arrChooser(magicTables), 2));
-
-const item_results = document.getElementById("item-results")
-
-let itemRoll = roll.join('')
-const Submit_button = document.getElementById("Table-Submit");
-Submit_button.addEventListener('click', function() {
-    document.getElementById("item-results").innerHTML = itemRoll;
-})
 
 
+
+let submitButton = document.getElementById("Table-Submit");
+let itemResultsText = document.getElementById("item-results");
+submitButton.addEventListener("click", rollFunc = () => {
+    let number = document.getElementById("Num-Input").value;
+    let tables = [];
+    let inputElements = document.querySelectorAll('input[type="checkbox"]');
+    for(i = 0; i < inputElements.length; i++) {
+        if(inputElements[i].checked === true) {
+            switch(inputElements[i].value) {
+                case "magictableA":
+                    tables.push(magictableA);
+                    break;
+                case "magictableB":
+                    tables.push(magicTableB);
+                    break;
+                case "magictableC":
+                    tables.push(magicTableC);
+                    break;
+                case "magictableD":
+                    tables.push(magicTableD);
+                    break;
+                case "magictableE":
+                    tables.push(magicTableE);
+                    break;
+                case "magictableF":
+                    tables.push(magicTableF);
+                    break;
+                case "magictableG":
+                    tables.push(magicTableG);
+                    break;
+                case "magictableH":
+                    tables.push(magicTableH);
+                    break;
+                case "magictableI":
+                    tables.push(magicTableI);
+                    break;
+                default:
+                    alert("select a table");
+                    break;
+            }
+        }
+    }
+    let rolledItems = randItemN(arrChooser(tables), number);
+    itemResultsText.innerHTML = rolledItems;
+});
 
 

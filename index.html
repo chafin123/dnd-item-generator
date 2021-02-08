@@ -5,9 +5,8 @@
 
   <meta charset = "UTF-8">
   <link href="https://fonts.googleapis.com/css?family=Abel|Berkshire+Swash&display=swap" rel="stylesheet">
-  <script src="Item Generator v3.js" type="text/js"></script>
-  <link rel = "stylesheet"
-  href = "item style.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 </head>
@@ -27,40 +26,40 @@
       
   <p>Only one table will be used.</p>
       
-  <form>
+  <form id="table-results">
     <label class="table-checkbox-label">
-      <input type="checkbox" class="table-checkboxes" value="">Magic Table A
+      <input type="checkbox" class="table-checkboxes" id="magictableA" value="magictableA">Magic Table A
     </label>
     
     <label class="table-checkbox-label">
-      <input type="checkbox" class="table-checkboxes" value="">Magic Table B
+      <input type="checkbox" class="table-checkboxes" id="magictableB" value="magictableB">Magic Table B
     </label>
     
     <label class="table-checkbox-label">
-      <input type="checkbox" class="table-checkboxes" value="">Magic Table C
-    </label>
-    
-     <label class="table-checkbox-label">
-      <input type="checkbox" class="table-checkboxes" value="">Magic Table D
-    </label>
-    
-    <label class="table-checkbox-label">
-      <input type="checkbox" class="table-checkboxes" value="">Magic Table E
-    </label>
-    
-    <label class="table-checkbox-label">
-      <input type="checkbox" class="table-checkboxes" value="">Magic Table F
+      <input type="checkbox" class="table-checkboxes" id="magictableC" value="magictableC">Magic Table C
     </label>
     
      <label class="table-checkbox-label">
-      <input type="checkbox" class="table-checkboxes" value="">Magic Table G
+      <input type="checkbox" class="table-checkboxes" id="magictableD" value="magictableD">Magic Table D
     </label>
     
     <label class="table-checkbox-label">
-      <input type="checkbox" class="table-checkboxes" value="">Magic Table H
+      <input type="checkbox" class="table-checkboxes" id="magictableE" value="magictableE">Magic Table E
+    </label>
+    
+    <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" id="magictableF" value="magictableF">Magic Table F
+    </label>
+    
+     <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" id="magictableG" value="magictableG">Magic Table G
+    </label>
+    
+    <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" id="magictableH" value="magictableH">Magic Table H
     </label>
     <label class="table-checkbox-label">
-      <input type="checkbox" class="table-checkboxes" value="">Magic Table I
+      <input type="checkbox" class="table-checkboxes" id="magictableI" value="magictableI">Magic Table I
     </label>
   </form>
 </div>
@@ -81,11 +80,5 @@
   </div>
   
 </div>
-  
-<script src="Item Generator v3.js" charset="utf-8"></script>
-   
-<script>
-document.getElementById("item-results").innerHTML = itemRoll;
-</script>
 </body>
 </html>
