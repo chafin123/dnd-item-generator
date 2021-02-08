@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "en-US"></html>
+<html>
+<head>
+
+  <meta charset = "UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Berkshire+Swash&display=swap" rel="stylesheet">
+  <script src="Item Generator v3.js" type="text/js"></script>
+  <link rel = "stylesheet"
+  href = "item style.css" />
+</head>
+
+</head>
+<header>
+  <h1>
+    Are you ready to generate?
+  </h1>
+</header>
+<body>
+
+
+<div class="Generate-Area">
+  <div class="Generate-Area" id="Generate Field">
+    
+    <div class="table-checkbox-group">
+  <h2>Choose which tables items will be choosen from!</h2>
+      
+  <p>Only one table will be used.</p>
+      
+  <form>
+    <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" value="">Magic Table A
+    </label>
+    
+    <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" value="">Magic Table B
+    </label>
+    
+    <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" value="">Magic Table C
+    </label>
+    
+     <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" value="">Magic Table D
+    </label>
+    
+    <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" value="">Magic Table E
+    </label>
+    
+    <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" value="">Magic Table F
+    </label>
+    
+     <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" value="">Magic Table G
+    </label>
+    
+    <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" value="">Magic Table H
+    </label>
+    <label class="table-checkbox-label">
+      <input type="checkbox" class="table-checkboxes" value="">Magic Table I
+    </label>
+  </form>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    <input type="number"id="Num-Input" name="Table, # of Items"><br>
+    <input type="submit"id="Table-Submit" name="submit">
+    
+    </div>
+  <div class="Generate-Area" id="results">
+    <p id="item-results">Results</p>
+    
+  </div>
+  
+</div>
+  
+<script src="Item Generator v3.js" charset="utf-8"></script>
+   
+<script>
+document.getElementById("item-results").innerHTML = itemRoll;
+</script>
+</body>
+</html>
