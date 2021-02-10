@@ -350,7 +350,6 @@ let magicTableI = [
     "Armor +2 splint",
     "Armor +2 studded leather",
     "Well of many worlds",
-    //Trying to get magic armor roll a subtable to show the type
     "Magic " + magicArmorTable() ,
     "Apparatus of Kwalish",
     "Armor of invulnerability",

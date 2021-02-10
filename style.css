@@ -35,13 +35,16 @@
   }
   .table-checkboxes {
     padding-bottom: 20px;
+    margin-right: 3px;
   }
   #Num-Input {
     padding:5px;
     margin:5px;
     background-color:#EDEFF0;
+    width: 50px;
   }
   #Table-Submit {
+    padding: 5px 5px;
     margin: 15px 15px;
     background-color:#FFD700;
   }
