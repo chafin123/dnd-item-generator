@@ -404,7 +404,7 @@ function randItemN(arr,num = 1) {
     let tempArr = [];
     let counter = 0;
     while(counter < num) {
-        tempArr.push(arr[Math.floor(Math.random()*arr.length)])
+        tempArr.push(" " + arr[Math.floor(Math.random()*arr.length)]  )
         counter++;
     }
     return tempArr;
